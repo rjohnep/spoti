@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/rjohnep/spoti/backend/db"
+	"github.com/rjohnep/spoti/db"
 )
 
 func main() {
