@@ -38,7 +38,7 @@ func loginCallback(c *gin.Context) {
 
 func spotifyLogin(c *gin.Context) {
 	var clientId = "f62d9fb9fc5c4d2192d49a897312ff69"
-	var redirectCallback = "http://localhost:8008/callback"
+	var redirectCallback = "http://localhost:7000/callback"
 	var scope = "user-read-private user-read-email"
 
 	req, err := http.NewRequest("GET", "https://accounts.spotify.com/authorize", nil)
@@ -47,7 +47,7 @@ func spotifyLogin(c *gin.Context) {
 	}
 
 	q := req.URL.Query()
-	q.Add("response_type", "code")
+	q.Add("response_type", "token")
 	q.Add("client_id", clientId)
 	q.Add("scope", scope)
 	q.Add("redirect_uri", redirectCallback)
