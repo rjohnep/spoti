@@ -1,0 +1,21 @@
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.listIem {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  max-width: 6rem;
+  max-height: 6rem;
+}
+
+.name {
+  font-size: 1.3rem;
+}
